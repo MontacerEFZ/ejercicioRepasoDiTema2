@@ -266,8 +266,15 @@
                             <constraint firstItem="oS3-te-spT" firstAttribute="leading" secondItem="kP6-it-6LS" secondAttribute="leading" constant="56" id="vuC-bK-3ga"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="UBk-Wz-HDk"/>
+                    <navigationItem key="navigationItem" id="UBk-Wz-HDk">
+                        <barButtonItem key="rightBarButtonItem" title="logout" id="xnf-0s-X4z">
+                            <connections>
+                                <action selector="btnLogOutAction:" destination="QZh-Qo-7zD" id="hiZ-1T-cA3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="btnLogOut" destination="xnf-0s-X4z" id="MW6-zo-SAv"/>
                         <outlet property="imFoto" destination="xIK-mc-Tut" id="6o8-2S-ypm"/>
                         <outlet property="lbArea" destination="XnY-Pp-Bqz" id="vOA-GF-BEg"/>
                         <outlet property="lbCategoria" destination="oS3-te-spT" id="RNG-tS-jjB"/>
