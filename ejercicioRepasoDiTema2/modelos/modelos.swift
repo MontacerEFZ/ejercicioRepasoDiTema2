@@ -30,4 +30,7 @@ struct Meal: Codable {
     let strMeal: String
     let strMealThumb: String
     let idMeal: String
+    let strCategory: String!
+    let strArea: String!
+    let strInstructions: String!
 }

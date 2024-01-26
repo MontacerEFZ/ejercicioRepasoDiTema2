@@ -43,4 +43,20 @@ final class ApiConexiones{
             }
         }
     }
-}
+    
+    func getReceta
+    (id: String, success: @escaping(_ respuesta: Meal) ->(), failure: @escaping(_ error: Error?) ->()){
+    let url = "\(BASE_URL)/api/json/v1/1/lookup.php"
+    let parameters: Parameters = ["i": id]
+    
+    AF.request(url, method: .get, parameters: parameters).validate(statusCode: 200...299).responseDecodable(of: Meals.self){
+    respuesta in
+    
+            if let res = respuesta.value{
+                success(res.meals[0]) 
+            }else{
+                failure(respuesta.error)
+            }
+        }
+    }
+    }

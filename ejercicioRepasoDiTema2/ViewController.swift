@@ -53,6 +53,14 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDataSourc
         }
         return celda
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MEALS" {
+            let destino = segue.destination as! MealsViewController
+            let fila = tablaCategorias.indexPathForSelectedRow?.row
+            destino.categoria = self.listaCategorias[fila!].strCategory
+        }
+    }
 
 }
 

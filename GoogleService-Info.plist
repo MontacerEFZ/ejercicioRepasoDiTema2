@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyC8R0Y3vVRsYN9sCcQXqzVqE77b2LnyM0A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>159070967706</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>montacer.elfazazi.ejercicioRepasoDiTema2</string>
+	<key>PROJECT_ID</key>
+	<string>ejemplofirebasebpmdmtema2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ejemplofirebasebpmdmtema2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:159070967706:ios:1e3ec05fd3ce1279140c23</string>
+	<key>DATABASE_URL</key>
+	<string>https://ejemplofirebasebpmdmtema2-default-rtdb.europe-west1.firebasedatabase.app</string>
+</dict>
+</plist>
