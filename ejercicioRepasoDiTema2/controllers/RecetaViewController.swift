@@ -9,6 +9,7 @@ import UIKit
 import Alamofire
 import AlamofireImage
 import FirebaseAuth
+import FirebaseFirestore
 
 class RecetaViewController: UIViewController {
 
@@ -21,12 +22,18 @@ class RecetaViewController: UIViewController {
     
     var id: String!
     var receta: Meal!
+    var bd: Firestore!
+    var datos: ManagerUserDefaults!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.btnLogOut.isEnabled = false
         if let user = Auth.auth().currentUser{
             self.btnLogOut.isEnabled = true
         }
+        
+        bd = Firestore.firestore() //equivalente al getInstance de android
+        datos = ManagerUserDefaults()
         cargarReceta()
     }
     
@@ -56,6 +63,14 @@ class RecetaViewController: UIViewController {
     @IBAction func btnGuardar(_ sender: Any) {
         if let user = Auth.auth().currentUser { //si esta logeado
             self.btnLogOut.isEnabled = true
+            
+            bd.collection("recetas").document(user.uid).collection("favoritas").document(receta.idMeal).setData(["comida": receta.strMeal,
+                                                                                                                    "categoria": receta.strCategory!,
+                                                                                                                    "area": receta.strArea!,
+                                                                                                                    "instrucciones": receta.strInstructions!]);
+            
+            datos.guardar(dato: receta.strMeal, clave: "RECETA")
+            datos.guardar(dato: user.email!, clave: "EMAIL")
         }else{
             self.btnLogOut.isEnabled = false
             let ventana = self.storyboard?

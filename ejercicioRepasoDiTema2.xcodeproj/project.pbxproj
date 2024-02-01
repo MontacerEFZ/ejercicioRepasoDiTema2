@@ -21,6 +21,8 @@
 		1B05B1D52B62570F007F9A42 /* modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B05B1D42B62570F007F9A42 /* modelos.swift */; };
 		1B05B1DB2B625788007F9A42 /* ApiConexiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B05B1DA2B625788007F9A42 /* ApiConexiones.swift */; };
 		1B05B1E02B62695F007F9A42 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B05B1DF2B62695F007F9A42 /* MealsViewController.swift */; };
+		1B4CF89F2B6B930200A6A2F9 /* ManagerUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4CF89E2B6B930200A6A2F9 /* ManagerUserDefaults.swift */; };
+		1B4CF8A52B6B959B00A6A2F9 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 1B4CF8A42B6B959B00A6A2F9 /* Toast */; };
 		1BBDF7482B63D327005BC90A /* RecetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBDF7472B63D327005BC90A /* RecetaViewController.swift */; };
 		1BBDF74E2B63DE8D005BC90A /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 1BBDF74D2B63DE8D005BC90A /* FirebaseAppDistribution-Beta */; };
 		1BBDF7502B63DE8D005BC90A /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 1BBDF74F2B63DE8D005BC90A /* FirebaseInAppMessaging-Beta */; };
@@ -90,6 +92,7 @@
 		1B05B1D42B62570F007F9A42 /* modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelos.swift; sourceTree = "<group>"; };
 		1B05B1DA2B625788007F9A42 /* ApiConexiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConexiones.swift; sourceTree = "<group>"; };
 		1B05B1DF2B62695F007F9A42 /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
+		1B4CF89E2B6B930200A6A2F9 /* ManagerUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerUserDefaults.swift; sourceTree = "<group>"; };
 		1BBDF7472B63D327005BC90A /* RecetaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaViewController.swift; sourceTree = "<group>"; };
 		1BBDF7882B63E044005BC90A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1BBDF78D2B63E1F2005BC90A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 				1B05B1C92B6256F4007F9A42 /* AlamofireImage in Frameworks */,
 				1BBDF77E2B63DE8D005BC90A /* FirebaseDynamicLinks in Frameworks */,
 				1BBDF74E2B63DE8D005BC90A /* FirebaseAppDistribution-Beta in Frameworks */,
+				1B4CF8A52B6B959B00A6A2F9 /* Toast in Frameworks */,
 				1BBDF7722B63DE8D005BC90A /* FirebaseDatabaseSwift-Beta in Frameworks */,
 				1BBDF7502B63DE8D005BC90A /* FirebaseInAppMessaging-Beta in Frameworks */,
 				1BBDF7562B63DE8D005BC90A /* FirebaseFirestore in Frameworks */,
@@ -229,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				1B05B1DA2B625788007F9A42 /* ApiConexiones.swift */,
+				1B4CF89E2B6B930200A6A2F9 /* ManagerUserDefaults.swift */,
 			);
 			path = conexiones;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				1BBDF77F2B63DE8D005BC90A /* FirebaseFunctionsSwift-Beta */,
 				1BBDF7812B63DE8D005BC90A /* FirebaseFunctions */,
 				1BBDF7832B63DE8D005BC90A /* FirebaseFirestoreCombine-Community */,
+				1B4CF8A42B6B959B00A6A2F9 /* Toast */,
 			);
 			productName = ejercicioRepasoDiTema2;
 			productReference = 1B05B1822B625251007F9A42 /* ejercicioRepasoDiTema2.app */;
@@ -356,6 +362,7 @@
 				1B05B1C12B625577007F9A42 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				1B05B1C72B6256F4007F9A42 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 				1BBDF74C2B63DE8D005BC90A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1B4CF8A32B6B959B00A6A2F9 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = 1B05B1832B625251007F9A42 /* Products */;
 			projectDirPath = "";
@@ -407,6 +414,7 @@
 				1B05B1DB2B625788007F9A42 /* ApiConexiones.swift in Sources */,
 				1B05B1862B625251007F9A42 /* AppDelegate.swift in Sources */,
 				1B05B1882B625251007F9A42 /* SceneDelegate.swift in Sources */,
+				1B4CF89F2B6B930200A6A2F9 /* ManagerUserDefaults.swift in Sources */,
 				1B05B1E02B62695F007F9A42 /* MealsViewController.swift in Sources */,
 				1B05B1BA2B6253DE007F9A42 /* CeldaTableViewCell.swift in Sources */,
 				1B05B1D52B62570F007F9A42 /* modelos.swift in Sources */,
@@ -754,6 +762,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		1B4CF8A32B6B959B00A6A2F9 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
 		1BBDF74C2B63DE8D005BC90A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -774,6 +790,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1B05B1C72B6256F4007F9A42 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
 			productName = AlamofireImage;
+		};
+		1B4CF8A42B6B959B00A6A2F9 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B4CF8A32B6B959B00A6A2F9 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 		1BBDF74D2B63DE8D005BC90A /* FirebaseAppDistribution-Beta */ = {
 			isa = XCSwiftPackageProductDependency;

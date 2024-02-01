@@ -8,15 +8,26 @@
 import UIKit
 import Alamofire
 import AlamofireImage
+import Toast
 
 class ViewController: UIViewController, UITextViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tablaCategorias: UITableView!
     
     var listaCategorias: [Category]!
+    var datos: ManagerUserDefaults!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        datos = ManagerUserDefaults()
+        let email = datos.recuperar(clave: "EMAIL")
+        let receta = datos.recuperar(clave: "RECETA")
+        
+        if email != "" && receta != "" {
+        self.view.makeToast("Email: \(email) Receta: \(receta)")
+        }
+
         
         listaCategorias = []
         cargarCategorias()
